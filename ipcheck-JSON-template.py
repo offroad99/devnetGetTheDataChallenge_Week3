@@ -3,7 +3,6 @@ import ipaddress
 
 try:
     with open('JSONdata') as f:
-    #    data = json.
         jdata = json.load(f)
 except:
     print("Cannot open JSONdata file")
