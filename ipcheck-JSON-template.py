@@ -1,8 +1,12 @@
 import json
 import ipaddress
+import os
+
+#get python file path to open the json file
+mypath = os.path.abspath(os.path.dirname(__file__))
 
 try:
-    with open('JSONdata') as f:
+    with open(f'{mypath}/JSONdata') as f:
         jdata = json.load(f)
 except:
     print("Cannot open JSONdata file")
